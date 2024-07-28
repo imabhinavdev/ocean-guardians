@@ -10,10 +10,3 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    position: absolute;
-    bottom: 80px;
-    left: 44px;
-    text-align: center;
-    width: 100%;
-}

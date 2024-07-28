@@ -2,9 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 const marqueeTexts = [
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-    "Est iusto pariatur veritatis magnam itaque? Quas voluptas",
-    "in ad deleniti rerum nobis explicabo modi, aliquam molestiae"
+    "Save Ocean! Save Lives!"
 ];
 
 const Marquee = () => {
@@ -79,12 +77,12 @@ const Marquee = () => {
     };
 
     return (
-        <div
-            className="relative w-screen mt-8 py-4 bg-green-600 text-gray-200 flex overflow-hidden items-center"
-            style={{ minHeight: "110px" }}
-        >
-            {renderMarqueeElements()}
-        </div>
+      <div
+        className="relative w-screen mt-6 py-4 mb-6 bg-[#45c4b0] text-gray-200 flex overflow-hidden items-center"
+        style={{ minHeight: "100px" }}
+      >
+        {renderMarqueeElements()}
+      </div>
     );
 };
 

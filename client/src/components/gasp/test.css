@@ -1,0 +1,46 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    background-color: #506b57;
+}
+
+.wrapper {
+    clip-path: circle(1% at 50% 50%);
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    height: 100vh;
+    flex: 1 0 100%;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.purple {
+    background-color: blueviolet;
+}
+
+.green {
+    background-color: #167000;
+}
+
+.orange {
+    background-color: #ba4700;
+}
+
+.blue {
+    background-color: blue;
+}

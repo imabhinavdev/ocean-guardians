@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const chartContainer = document.getElementById('chartContainer');
-    const ctxBar = document.getElementById('barChart').getContext('2d');;
-    
+    const ctxBar = document.getElementById('barChart').getContext('2d');
+
     const canvas = document.createElement('canvas');
     chartContainer.appendChild(canvas);
-    
-     new Chart(ctxBar, {
+
+    new Chart(ctxBar, {
         type: 'bar',
         data: {
             labels: ['Plastic', 'Oil Spills', 'Industrial Waste', 'Sewage'],
@@ -29,6 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             responsive: true,
+            plugins: {
+                legend: {
+                    display: false // Hides the legend for the dataset
+                },
+                title: {
+                    display: true,
+                    text: 'Pollution Levels (tons)',
+                    font: {
+                        size: 18
+                    }
+                }
+            },
             scales: {
                 y: {
                     beginAtZero: true
@@ -36,12 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
     new Chart(canvas, {
         type: 'pie',
         data: {
             labels: ['Fish', 'Coral', 'Algae', 'Mammals'],
             datasets: [{
-                data: [33000,6000,72500,1130],
+                data: [33000, 6000, 72500, 1130],
                 backgroundColor: ['#0077be', '#00aaff', '#00cccc', '#009999'],
                 borderWidth: 3
             }]
@@ -51,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
             plugins: {
                 legend: {
                     position: 'top',
-                      
                 },
                 title: {
                     display: true,

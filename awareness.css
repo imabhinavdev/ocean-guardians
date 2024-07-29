@@ -54,6 +54,11 @@ main {
     padding: 20px;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .section {
     padding: 10px 10px;
 }
@@ -64,11 +69,11 @@ main {
 }
 
 #chartContainer {
-    width:108%;
-    max-width:500px;
-    height:400px;
-    margin:0 auto;
-    position:relative;
+    width: 108%;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .text-section {
@@ -105,13 +110,27 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 canvas {
     display: block;
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
 }
+
 .bar-section {
     text-align: center;
     margin-bottom: 50px;
+}
+
+#pollution {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#barChart {
+    width: 108%;
+    height: 350px;
 }

@@ -22,7 +22,7 @@ const Home = () => {
       <ScrollReveal />
       <div className="w-full h-screen overflow-y-hidden">
         <iframe
-          src="https://imabhinav.dev"
+          src="https://imabhinavdev.github.io/ocean-guardians/"
           title="Abhinav"
           className="w-screen h-full "
           style={{ border: 'none' }}

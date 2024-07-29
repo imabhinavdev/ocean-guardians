@@ -48,6 +48,24 @@ const ScrollReveal = () => {
   return (
     <>
       <div className="section">
+        <div className="flex">
+          <div className="w-1/2  text-justify">
+            <p className="font-nunito text-3xl text-white ml-20 mt-10">The world&apos;s oceans: their temperature, chemistry, currents and life, drive global systems that make the Earth habitable for humankind. How we manage this vital resource is essential for humanity as a whole, and to counterbalance the effects of climate change.
+              <br />
+              <br />
+
+
+              Over three billion people depend on marine and coastal biodiversity for their livelihoods. However, today we are seeing 30 percent of the world&apos;s fish stocks overexploited, reaching below the level at which they can produce sustainable yields.
+              <br />
+              <br />
+              Oceans also absorb about 30 percent of the carbon dioxide produced by humans, and we are seeing a 26 percent rise in ocean acidification since the beginning of the industrial revolution. Marine pollution, an overwhelming majority of which comes from land-based sources, is reaching alarming levels, with an average of 13,000 pieces of plastic litter to be found on every square kilometre of ocean.
+              <br />
+              <br />
+              The SDGs aim to sustainably manage and protect marine and coastal ecosystems from pollution, as well as address the impacts of ocean acidification. Enhancing conservation and the sustainable use of ocean-based resources through international law will also help mitigate some of the challenges facing our oceans.</p>
+          </div>
+          <div>
+          </div>
+        </div>
 
       </div>
       <div className="section wrapper" ref={wrapRef}>
@@ -81,7 +99,7 @@ const ScrollReveal = () => {
             className="panel blue text-9xl font-bold text-center"
             ref={addToRefs}
           >
-           You !! Can Make a Difference, Be an Ocean Guardian
+            You !! Can Make a Difference, Be an Ocean Guardian
           </div>
         </div>
       </div>

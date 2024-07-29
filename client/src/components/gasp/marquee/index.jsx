@@ -67,7 +67,7 @@ const Marquee = () => {
         }
         return elements.map((text, index) => (
             <p
-                className="text-center px-4 text-6xl font-semibold absolute pin-l w-1/2"
+                className="text-center px-4 text-6xl font-semibold absolute pin-l w-1/2 font-mine"
                 key={`marquee-${index}`}
                 ref={(el) => marqueeElementsRefHandler(el, index)}
             >
@@ -78,7 +78,7 @@ const Marquee = () => {
 
     return (
         <div
-            className="relative w-screen   py-4  bg-[#45c4b0] text-gray-200 flex overflow-hidden items-center"
+            className="relative w-full   py-4  bg-[#45c4b0] text-gray-200 flex overflow-hidden items-center"
             style={{ minHeight: "100px" }}
         >
             {renderMarqueeElements()}

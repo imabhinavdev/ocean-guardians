@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness Page</title>
+    <link rel="stylesheet" href="awareness.css">
+    <script defer src="awareness.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#awareness">Awareness</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#contact">Contacts</a></li>   <!--NEED TO ADD CONTACT-->
+        </nav>
+        <h1>Ocean Awareness</h1>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <h2>Take a Dive</h2>
+            <p>The ocean is a vast and mysterious world that covers over 70% of the Earth's surface. It is home to a diverse range of
+            life forms, from the tiniest plankton to the largest whales. Understanding and preserving this incredible biodiversity
+            is crucial for the health of our planet.However, this delicate beauty is under threat due to various human activities that are causing unprecedented levels of
+            pollution</p>
+        </section>
+        <section id="about" class="section">
+            <h2>Impact Of Pollution on Marine Life</h2>
+            <li>Millions of tons of plastic waste end up in the ocean each year, harming marine animals that ingest or become entangled
+            in plastic debris.</li>
+            <li>Industrial runoff, agricultural chemicals, and oil spills introduce toxic substances into marine environments, poisoning
+            marine life and disrupting ecosystems.</li>
+            <li>Industrial runoff, agricultural chemicals, and oil spills introduce toxic substances into marine environments, poisoning
+            marine life and disrupting ecosystems.</li>
+            <li>Rising sea temperatures and ocean acidification, caused by increased carbon dioxide levels, are bleaching coral reefs
+            and altering the habitats of many marine species.</li>
+
+        </section>
+        <section id="awareness" class="section chart-section">
+            <h1>Marine Life Awareness</h1>
+            <div id="chartContainer"></div>
+        </section>
+
+        <section id="pollution" class="section bar-section">
+            <h1>Pollution Reports</h1>
+            <canvas id="barChart"></canvas>
+        </section>
+
+        <section id="facts"  class="text-section">
+            <div class="text-content">
+                <h3>Ocean Health is Critical for Human Survival</h3>
+                <p>Oceans produce at least 50% of the planet's oxygen, which is essential for human life. They also absorb about 30% of the
+                carbon dioxide produced by humans, buffering the impacts of global warming</p>
+            </div>
+
+            <div class="text-content">
+                <h3>Coral Reefs are Vital and Vulnerable</h3>
+                <p>Coral reefs support a vast number of marine species and provide critical ecosystem services, such as coastal protection
+                and tourism revenue. They are highly sensitive to changes in temperature and acidity, making them particularly
+                vulnerable to climate change.</p>
+            </div>
+
+            <div class="text-content">
+                <h3>Plastic Pollution is a Major Threat</h3>
+                <p>Approximately 8 million tons of plastic enter the oceans each year, causing harm to marine life and ecosystems. This
+                pollution can result in the ingestion and entanglement of marine animals, and microplastics can enter the human food
+                chain through seafood.</p>
+            </div>
+
+            <div class="text-content">
+                <h3>Deep Sea Universe</h3>
+                <p>More than 80% of the ocean remains unexplored. The deep sea holds potential for new scientific discoveries, including
+                new species and medical compounds, but it is also vulnerable to human exploitation and pollution.
+</p>
+            </div>
+
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>For more information, please reach out to us at info@</p>  <!--Have To Include info still-->
+        </section>
+    </main>
+    <footer>
+        <p>Life Below Ocean</p>
+    </footer>
+</body>
+
+</html>

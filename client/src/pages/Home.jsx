@@ -1,8 +1,7 @@
 import React from 'react';
 import ocean from "../assets/ocean.jpg";
 import Marquee from '../components/gasp/marquee/index'
-import  Circle  from '../components/gasp/test';
-
+import ScrollReveal from '../components/gasp/ScrollReveal/index';
 const Home = () => {
   return (
     <div className="home">
@@ -20,8 +19,15 @@ const Home = () => {
         </div>
       </div>
       <Marquee />
-      <Circle />
-
+      <ScrollReveal />
+      <div className="w-full h-screen overflow-y-hidden">
+        <iframe
+          src="https://imabhinavdev.github.io/ocean-guardians/"
+          title="Abhinav"
+          className="w-screen h-full "
+          style={{ border: 'none' }}
+        />
+      </div>
     </div>
   );
 };

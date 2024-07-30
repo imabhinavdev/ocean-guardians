@@ -48,9 +48,9 @@ const ScrollReveal = () => {
   return (
     <>
       <div className="section">
-        <div className="flex">
+        <div className="flex gap-8">
           <div className="w-1/2  text-justify">
-            <p className="font-nunito text-3xl text-white ml-20 mt-10">The world&apos;s oceans: their temperature, chemistry, currents and life, drive global systems that make the Earth habitable for humankind. How we manage this vital resource is essential for humanity as a whole, and to counterbalance the effects of climate change.
+            <p className="font-nunito text-2xl  ml-10 mt-10">The world&apos;s oceans: their temperature, chemistry, currents and life, drive global systems that make the Earth habitable for humankind. How we manage this vital resource is essential for humanity as a whole, and to counterbalance the effects of climate change.
               <br />
               <br />
 
@@ -63,6 +63,10 @@ const ScrollReveal = () => {
               <br />
               The SDGs aim to sustainably manage and protect marine and coastal ecosystems from pollution, as well as address the impacts of ocean acidification. Enhancing conservation and the sustainable use of ocean-based resources through international law will also help mitigate some of the challenges facing our oceans.</p>
           </div>
+          <div className="w-1/2 p-4 pt-12 ">
+            <img src="https://images.unsplash.com/photo-1513039464749-94912b3841ce?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ocean" className="rounded-md w-full h-full" />
+
+          </div>
           <div>
           </div>
         </div>
@@ -70,6 +74,7 @@ const ScrollReveal = () => {
       </div>
       <div className="section wrapper" ref={wrapRef}>
         <div className="content">
+
 
           <div
             className="panel teal text-9xl font-bold text-center"
@@ -103,9 +108,7 @@ const ScrollReveal = () => {
           </div>
         </div>
       </div>
-      <div className="section">
 
-      </div>
     </>
   );
 };

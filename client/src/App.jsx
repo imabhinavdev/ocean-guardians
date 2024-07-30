@@ -8,6 +8,8 @@ import Support from './pages/Support'
 import Donate from './pages/Donate'
 import Community from './pages/Community'
 import Feedback from './pages/Feedback'
+import LoginForm from './pages/Login'
+import SignupForm from './pages/Signup'
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,9 +22,10 @@ const App = () => {
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
         <Route path="donate/" element={<Donate/>}/>
-
         {/* this is feedback form*/}
         <Route path="feedback/" element = {<Feedback/>}/>
+        <Route path="login/" element={<LoginForm/>}/>
+        <Route path="signup/" element={<SignupForm/>}/>
       </Routes>
     </BrowserRouter>
   )

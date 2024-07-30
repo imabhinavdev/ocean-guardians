@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import "./styles/login.css"
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const LoginForm = () => {
   });
 
   return (
-    <main className="w-full h-screen flex flex-col items-center justify-center px-4 #06b6d4">
+    <main className="w-full h-screen flex flex-col  items-center justify-center px-4 #06b6d4">
       <div className="max-w-sm w-full text-gray-600">
         <div className="text-center">
           <div className="mt-5 space-y-2">

@@ -7,6 +7,8 @@ import Awareness from './pages/Awareness'
 import Support from './pages/Support'
 import Donate from './pages/Donate'
 import Community from './pages/Community'
+import LoginForm from './pages/Login'
+import SignupForm from './pages/Signup'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
         <Route path="donate/" element={<Donate/>}/>
+        <Route path="login/" element={<LoginForm/>}/>
+        <Route path="signup/" element={<SignupForm/>}/>
       </Routes>
     </BrowserRouter>
   )

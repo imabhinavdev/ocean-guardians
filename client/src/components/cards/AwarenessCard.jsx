@@ -13,3 +13,4 @@ const AwarenessCard = ({ title, desc }) => {
 }
 
 export default AwarenessCard
+// checkoutt

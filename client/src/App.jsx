@@ -7,7 +7,7 @@ import Awareness from './pages/Awareness'
 import Support from './pages/Support'
 import Donate from './pages/Donate'
 import Community from './pages/Community'
-
+import Feedback from './pages/Feedback'
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +20,9 @@ const App = () => {
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
         <Route path="donate/" element={<Donate/>}/>
+
+        {/* this is feedback form*/}
+        <Route path="feedback/" element = {<Feedback/>}/>
       </Routes>
     </BrowserRouter>
   )

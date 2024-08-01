@@ -150,14 +150,7 @@ const Navbar = () => {
                   Awareness
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/donate"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
-                >
-                  Donate
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   to="/support"
@@ -172,10 +165,18 @@ const Navbar = () => {
                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
                   Feedback
+              
+               
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   to="/login"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                Login
+                  Login
+               
                 </Link>
               </li>
             </ul>

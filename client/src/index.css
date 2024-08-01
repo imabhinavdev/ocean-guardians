@@ -6,7 +6,15 @@
     position: relative;
 }
 
+
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
+.font-mine {
+    font-family: "PT Sans Narrow";
+}
+
+.font-nunito {
+    font-family: "Nunito Sans";
+}

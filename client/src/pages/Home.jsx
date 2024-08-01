@@ -1,27 +1,36 @@
 import React from 'react';
 import ocean from "../assets/ocean.jpg";
 import Marquee from '../components/gasp/marquee/index'
-import  Circle  from '../components/gasp/test';
-
+import ScrollReveal from '../components/gasp/ScrollReveal/index';
 const Home = () => {
   return (
     <div className="home">
-      <img
-        src={ocean}
-        alt="oceanimg"
-        className="w-full max-h-screen relative"
-      />
-      <div className="container absolute top-80  left-48 text-9xl font-bold">
-        <div id="title" className="">
-          <h1 className="text-[#0048c9] text-center mb-10 w-full">
-            OCEAN GUARDIANS
-          </h1>
-          <p className="text-6xl text-center text-white">You can be the one!</p>
+      <main>
+        <img
+          src={ocean}
+          alt="oceanimg"
+          className="w-full max-h-screen relative"
+        />
+        <div className="container absolute top-80  left-48 text-9xl font-bold">
+          <div id="title" className="">
+            <h1 className="text-[#0048c9] text-center mb-10 w-full">
+              OCEAN GUARDIANS
+            </h1>
+            <p className="text-6xl text-center text-white">You can be the one!</p>
+          </div>
         </div>
-      </div>
+      </main>
       <Marquee />
-      <Circle />
+      <ScrollReveal />
 
+      <div className="w-full h-screen  overflow-hidden">
+        <iframe
+          src="https://imabhinavdev.github.io/ocean-guardians/"
+          title="Abhinav"
+          className="w-screen h-full "
+          style={{ border: 'none' }}
+        />
+      </div>
     </div>
   );
 };

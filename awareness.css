@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1fff0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #0077be, #00aaff);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section {
+    padding: 10px 10px;
+}
+
+.chart-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#chartContainer {
+    width: 108%;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    background-color: #faeee0;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.text-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-content h3 {
+    font-weight: 600;
+}
+
+footer {
+    background-color: #00a1beb2;
+    color: #ffffff80;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.bar-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#pollution {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#barChart {
+    width: 108%;
+    height: 350px;
+}

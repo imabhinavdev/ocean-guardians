@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A website to save world below water.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "keywords": [
     "ocean-guardians"
@@ -12,11 +14,15 @@
   "author": "Ikshana",
   "license": "ISC",
   "dependencies": {
+    "@uiw/react-markdown-editor": "^6.1.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "easy-jwt-auth": "^1.0.6",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.9.14"
   },
   "devDependencies": {

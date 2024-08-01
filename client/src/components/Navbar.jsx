@@ -55,9 +55,8 @@ const Navbar = () => {
             </svg>
           </button>
           <div
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } w-full md:block md:w-auto`}
+            className={`${isMenuOpen ? "block" : "hidden"
+              } w-full md:block md:w-auto`}
             id="navbar-dropdown"
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
@@ -102,9 +101,8 @@ const Navbar = () => {
                 </button>
                 {/* Dropdown menu */}
                 <div
-                  className={`${
-                    isDropdownOpen ? "block" : "hidden"
-                  } absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `}
+                  className={`${isDropdownOpen ? "block" : "hidden"
+                    } absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `}
                 >
                   <ul className="py-2 text-sm text-gray-700 ">
                     <li>
@@ -169,13 +167,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/feedback"
-                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
-                >
-                  Feedback
-                  to="/login"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                Login
+                Feedback
                 </Link>
               </li>
             </ul>

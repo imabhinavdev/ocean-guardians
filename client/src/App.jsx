@@ -21,7 +21,10 @@ const App = () => {
         <Route path="awareness/" element={<Awareness/>}/>
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
-        <Route path="donate/" element={<Donate/>}/>
+
+
+        {/* <Route path="donate/" element={<Donate/>}/> */}
+        
         {/* this is feedback form*/}
         <Route path="feedback/" element = {<Feedback/>}/>
         <Route path="login/" element={<LoginForm/>}/>

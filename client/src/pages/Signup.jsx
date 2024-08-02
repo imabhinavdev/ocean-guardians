@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import "./styles/login.css";
+import { Link } from 'react-router-dom';
 
 const SignupForm = () => {
   const formik = useFormik({
@@ -34,18 +35,19 @@ const SignupForm = () => {
 
   return (
     <main className="conta flex items-center justify-center min-h-screen bg-gray-900 conntainer-fluid" style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", height:"100vh" }}>
-      <div className="max-w-sm w-full text-gray-600 log">
+      <div className="p-8 text-gray-600 log">
         <div className="text-center">
-          <div className="mt-5 space-y-2">
-            <h3 className="#111827 text-2xl font-bold sm:text-3xl">Sign up</h3>
-            <p className="text-black">
-              Already have an account? <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+          <div className="mt-1 space-y-2">
+            <h3 className="font-bold text-4xl text-gray-900">Sign up</h3>
+            <p className="text-slate-900">
+              Already have an account?  &nbsp; 
+              <Link to="/login" className="font-medium text-indigo-600 transition hover:text-indigo-500">Log in</Link>
             </p>
           </div>
         </div>
-        <form onSubmit={formik.handleSubmit} className="mt-12 space-y-11 flex flex-col container-fluid">
+        <form onSubmit={formik.handleSubmit} className="mt-4 space-y-11 flex flex-col container-fluid">
           <div>
-            <label htmlFor="name" className="font-medium #111827">Name</label>
+            <label htmlFor="name" className="font-medium text-gray-900">Name</label>
             <input
               id="name"
               name="name"
@@ -61,7 +63,7 @@ const SignupForm = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="font-medium #111827">Email Address</label>
+            <label htmlFor="email" className="font-medium text-gray-900">Email Address</label>
             <input
               id="email"
               name="email"

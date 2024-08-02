@@ -115,29 +115,15 @@ const Navbar = () => {
                         Dashboard
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="block px-4 py-2 hover:bg-gray-100 "
-                      >
-                        Settings
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="block px-4 py-2 hover:bg-gray-100 "
-                      >
-                        Earnings
-                      </Link>
-                    </li>
+                    
+                    
                   </ul>
                   <div className="py-1">
                     <Link
-                      to="#"
+                      to="/login"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
                     >
-                      Sign out
+                      Log in
                     </Link>
                   </div>
                 </div>
@@ -168,14 +154,7 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li>
-                <Link
-                  to="/login"
-                  className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
-                >
-                  Login
-                </Link>
-              </li>
+              
             </ul>
           </div>
         </div>

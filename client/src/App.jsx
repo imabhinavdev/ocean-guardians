@@ -11,6 +11,8 @@ import Community from './pages/Community'
 import Feedback from './pages/Feedback'
 import LoginForm from './pages/Login'
 import SignupForm from './pages/Signup'
+import JoinInitiative from './pages/JoinInitiative'
+import Volunteer from './pages/Volunteer'
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,7 +24,8 @@ const App = () => {
         <Route path="awareness/" element={<Awareness/>}/>
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
-
+        <Route path="join/" element={<JoinInitiative/>}/>
+        <Route path="volunteer/" element={<Volunteer/>}/>
 
         {/* <Route path="donate/" element={<Donate/>}/> */}
         

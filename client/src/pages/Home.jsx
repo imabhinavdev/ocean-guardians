@@ -1,5 +1,5 @@
 import React from 'react';
-import ocean from "../assets/Ocean.jpg";
+import ocean from "../assets/ocean.jpg";
 import Marquee from '../components/gasp/marquee/index'
 import ScrollReveal from '../components/gasp/ScrollReveal/index';
 const Home = () => {

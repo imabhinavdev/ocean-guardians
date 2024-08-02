@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body, html {
+  margin: 0;
+}
+.ends {
+  min-height: 50vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.slides .list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.slides .slide {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide .background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  will-change: transform;
+  background-size: cover;
+}
+
+.slide .content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  width: 95%;
+  padding: 3rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 80rem;
+  position: relative;
+  align-items: center;
+  color: white;
+  /* background-color: yellow; */
+  width: 100%;
+  /* text-transform: uppercase; */
+  /* font-size: 4.6rem; */
+  line-height: 1.25em;
+  font-weight: 400;
+}
+
+.content h3{
+  font-size: 80px;
+}
+.content p{
+  font-size: 25px;
+  line-height: normal;
+  background-color: rgba(48, 46, 46, 0.5);
+  padding: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.ends button{
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: rgb(68, 157, 216);
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+}

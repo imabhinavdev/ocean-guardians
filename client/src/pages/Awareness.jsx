@@ -102,9 +102,9 @@ const Awareness = () => {
   }, []);
 
   return (
-    <main className="p-5 max-w-screen-xl m-auto text-[#333]">
+    <main className="p-5 max-w-screen-xl m-auto text-[#333] ">
 
-      <section id="home" className="p-4">
+      <section id="home" className="p-4 mt-20">
         <h2 className="text-2xl font-semibold mb-2">Take a Dive</h2>
         <p>The ocean is a vast and mysterious world that covers over 70% of the Earth's surface. It is home to a
           diverse range of life forms, from the tiniest plankton to the largest whales. Understanding and preserving this

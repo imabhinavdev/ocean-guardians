@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Awareness from './pages/Awareness'
 import Support from './pages/Support'
 import Donate from './pages/Donate'
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="login/" element={<LoginForm/>}/>
         <Route path="signup/" element={<SignupForm/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

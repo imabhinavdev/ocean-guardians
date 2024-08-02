@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Awareness from './pages/Awareness'
 import Support from './pages/Support'
 import Donate from './pages/Donate'
@@ -10,6 +11,8 @@ import Community from './pages/Community'
 import Feedback from './pages/Feedback'
 import LoginForm from './pages/Login'
 import SignupForm from './pages/Signup'
+import JoinInitiative from './pages/JoinInitiative'
+import Volunteer from './pages/Volunteer'
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,7 +24,8 @@ const App = () => {
         <Route path="awareness/" element={<Awareness/>}/>
         <Route path="community/" element={<Community/>}/>
         <Route path="support/" element={<Support/>}/>
-
+        <Route path="join/" element={<JoinInitiative/>}/>
+        <Route path="volunteer/" element={<Volunteer/>}/>
 
         {/* <Route path="donate/" element={<Donate/>}/> */}
         
@@ -30,6 +34,7 @@ const App = () => {
         <Route path="login/" element={<LoginForm/>}/>
         <Route path="signup/" element={<SignupForm/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

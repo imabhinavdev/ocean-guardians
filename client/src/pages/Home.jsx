@@ -1,5 +1,5 @@
 import React from 'react';
-import ocean from "../assets/ocean.jpg";
+import ocean from "../assets/Ocean.jpg";
 import Marquee from '../components/gasp/marquee/index'
 import ScrollReveal from '../components/gasp/ScrollReveal/index';
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         />
         <div className="container absolute top-80  left-48 text-9xl font-bold">
           <div id="title" className="">
-            <h1 className="text-[#0048c9] text-center mb-10 w-full">
+            <h1 className="text-[#ffffff] text-center mb-10 w-full">
               OCEAN GUARDIANS
             </h1>
             <p className="text-6xl text-center text-white">You can be the one!</p>

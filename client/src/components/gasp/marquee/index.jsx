@@ -79,7 +79,7 @@ const Marquee = () => {
     return (
         <div
             className="relative w-full py-4 bg-[#45c4b0] text-gray-200 flex overflow-hidden items-center"
-            style={{ minHeight: "200px" }}
+            style={{ minHeight: "150px" }}
         >
             {renderMarqueeElements()}
         </div>

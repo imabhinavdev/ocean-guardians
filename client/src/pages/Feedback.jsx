@@ -36,7 +36,7 @@ const Feedback = () => {
       <div className="glass p-8 w-full max-w-md">
         <form onSubmit={formik.handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-lg font-medium text-white">Name</label>
+            <label htmlFor="name" className="font-medium text-gray-900">Name</label>
             <input
               type="text"
               id="name"
@@ -49,9 +49,9 @@ const Feedback = () => {
             {formik.touched.name && formik.errors.name ? (
               <div className="text-red-500">{formik.errors.name}</div>
             ) : null}
-          </div>
+          </div> 
           <div>
-            <label htmlFor="email" className="block text-lg font-medium text-white">Email</label>
+            <label htmlFor="email" className="font-medium text-gray-900">Email</label>
             <input
               type="email"
               id="email"
@@ -66,7 +66,7 @@ const Feedback = () => {
             ) : null}
           </div>
           <div>
-            <label htmlFor="subject" className="block text-lg font-medium text-white">Subject</label>
+            <label htmlFor="subject" className="font-medium text-gray-900">Subject</label>
             <input
               type="text"
               id="subject"
@@ -81,25 +81,25 @@ const Feedback = () => {
             ) : null}
           </div>
           <div>
-            <label htmlFor="message" className="block text-lg font-medium text-white">Message</label>
+            <label htmlFor="message" className="font-medium  text-gray-900">Message</label>
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows="2"
               className="mt-1 block w-full px-3 py-2 glassField"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
             ></textarea>
             {formik.touched.message && formik.errors.message ? (
-              <div className="text-red-500">{formik.errors.message}</div>
+              <div className="text-red-600">{formik.errors.message}</div>
             ) : null}
           </div>
           <div>
             <button
               type="submit"
               disabled={formik.isSubmitting}
-              className="w-full glass-button"
+              className="w-full glass-button text-black"
             >
               {formik.isSubmitting ? 'Submitting...' : 'SUBMIT'}
             </button>

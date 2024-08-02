@@ -53,6 +53,11 @@ const Footer = () => {
                 Community
               </Link>
             </li>
+            <li>
+              <Link to="/support" className="hover:text-teal-300">
+                Support
+              </Link>
+            </li>
             
           </ul>
         </div>

@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import "./styles/login.css";
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -40,15 +41,15 @@ const LoginForm = () => {
     <div className="conta flex items-center justify-center min-h-screen bg-gray-900 conntainer-fluid" style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", height:"100vh" }}>
       <div className="p-8 text-gray-600 log">
         <div className="text-center">
-          <div className="mt-5 space-y-2">
+          <div className=" space-y-2">
             <h3 className="font-bold text-4xl text-gray-900">Log in</h3>
             <p className="text-slate-900">
               Don't have an account yet? &nbsp; 
-              <a href="/signup" className="font-medium text-indigo-600 transition hover:text-indigo-500">Sign up</a>
+              <Link to="/signup" className="font-medium text-indigo-600 transition hover:text-indigo-500">Sign up</Link>
             </p>
           </div>
         </div>
-        <form onSubmit={formik.handleSubmit} className="mt-12 space-y-11 flex flex-col">
+        <form onSubmit={formik.handleSubmit} className="mt-4 space-y-11 flex flex-col">
           <div>
             <label htmlFor="name" className="font-medium text-gray-900">Name</label>
             <input
@@ -81,7 +82,6 @@ const LoginForm = () => {
             ) : null}
           </div>
 
-        </form>
           <button
             type="submit"
             disabled={formik.isSubmitting}
@@ -90,6 +90,7 @@ const LoginForm = () => {
           >
             {formik.isSubmitting ? 'Logging in...' : 'Log in'}
           </button>
+        </form>
       </div>
     </div>
   );

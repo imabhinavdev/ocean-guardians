@@ -2,6 +2,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import "./styles/login.css";
 
 const SignupForm = () => {
   const formik = useFormik({
@@ -32,17 +33,17 @@ const SignupForm = () => {
   });
 
   return (
-    <main className="w-full h-screen flex flex-col items-center justify-center px-4">
-      <div className="max-w-sm w-full text-gray-600">
+    <main className="conta flex items-center justify-center min-h-screen bg-gray-900 conntainer-fluid" style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", height:"100vh" }}>
+      <div className="max-w-sm w-full text-gray-600 log">
         <div className="text-center">
           <div className="mt-5 space-y-2">
             <h3 className="#111827 text-2xl font-bold sm:text-3xl">Sign up</h3>
-            <p className="text-zinc-400">
+            <p className="text-black">
               Already have an account? <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
             </p>
           </div>
         </div>
-        <form onSubmit={formik.handleSubmit} className="mt-8 space-y-5">
+        <form onSubmit={formik.handleSubmit} className="mt-12 space-y-11 flex flex-col container-fluid">
           <div>
             <label htmlFor="name" className="font-medium #111827">Name</label>
             <input
@@ -52,7 +53,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.name}
-              className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-#dc2626 shadow-sm rounded-lg"
+              className="w-full mt-1 px-3 py-2 outline-none log-field"
             />
             {formik.touched.name && formik.errors.name ? (
               <div>{formik.errors.name}</div>
@@ -68,7 +69,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
-              className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-1 px-3 py-2 outline-none log-field"
             />
             {formik.touched.email && formik.errors.email ? (
               <div>{formik.errors.email}</div>
@@ -78,7 +79,7 @@ const SignupForm = () => {
           <button
             type="submit"
             disabled={formik.isSubmitting}
-            className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+            className="btn"
           >
             {formik.isSubmitting ? 'Submitting...' : 'Create account'}
           </button>

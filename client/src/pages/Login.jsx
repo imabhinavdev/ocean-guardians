@@ -1,12 +1,13 @@
-// import React from 'react';
+import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import "./styles/login.css"
+import "./styles/login.css";
 
 const LoginForm = () => {
   const navigate = useNavigate();
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -36,19 +37,20 @@ const LoginForm = () => {
   });
 
   return (
-    <main className="w-full h-screen flex flex-col  items-center justify-center px-4 #06b6d4">
-      <div className="max-w-sm w-full text-gray-600">
+    <div className="conta flex items-center justify-center min-h-screen bg-gray-900 conntainer-fluid" style={{ backgroundRepeat: "no-repeat", backgroundSize: "cover", height:"100vh" }}>
+      <div className="p-8 text-gray-600 log">
         <div className="text-center">
           <div className="mt-5 space-y-2">
-            <h3 className="#111827 text-2xl font-bold sm:text-3xl">Log in</h3>
-            <p className="text-zinc-400">
-              Dont have an account yet? <a href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a>
+            <h3 className="font-bold text-4xl text-gray-900">Log in</h3>
+            <p className="text-slate-900">
+              Don't have an account yet? &nbsp; 
+              <a href="/signup" className="font-medium text-indigo-600 transition hover:text-indigo-500">Sign up</a>
             </p>
           </div>
         </div>
-        <form onSubmit={formik.handleSubmit} className="mt-8 space-y-5">
+        <form onSubmit={formik.handleSubmit} className="mt-12 space-y-11 flex flex-col">
           <div>
-            <label htmlFor="name" className="font-medium #111827">Name</label>
+            <label htmlFor="name" className="font-medium text-gray-900">Name</label>
             <input
               id="name"
               name="name"
@@ -56,15 +58,15 @@ const LoginForm = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.name}
-              className="w-full mt-1 px-3 py-2 #dc2626 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-1 px-3 py-2 outline-none log-field"
             />
             {formik.touched.name && formik.errors.name ? (
-              <div>{formik.errors.name}</div>
+              <div className="text-red-600">{formik.errors.name}</div>
             ) : null}
           </div>
 
           <div>
-            <label htmlFor="email" className="font-medium #111827">Email Address</label>
+            <label htmlFor="email" className="font-medium text-gray-900">Email Address</label>
             <input
               id="email"
               name="email"
@@ -72,23 +74,24 @@ const LoginForm = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
-              className="w-full mt-2 px-3 py-2 #dc2626 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-1 px-3 py-2 outline-none log-field"
             />
             {formik.touched.email && formik.errors.email ? (
-              <div>{formik.errors.email}</div>
+              <div className="text-red-600">{formik.errors.email}</div>
             ) : null}
           </div>
 
+        </form>
           <button
             type="submit"
             disabled={formik.isSubmitting}
-            className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+            className="btn"
+            
           >
             {formik.isSubmitting ? 'Logging in...' : 'Log in'}
           </button>
-        </form>
       </div>
-    </main>
+    </div>
   );
 };
 

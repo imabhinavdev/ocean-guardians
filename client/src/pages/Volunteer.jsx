@@ -4,12 +4,14 @@ const backgroundImage =
   "https://img.freepik.com/free-photo/nature-landscape-with-black-sand-beach_23-2151380363.jpg?t=st=1722610751~exp=1722614351~hmac=c58e485b87087464e9d191d8f3bff9c00b533f6d8ad0f1d2875d04d51c5720a3&w=1380";
 
 const Volunteer = () => {
-  
   return (
     <div
       className="h-screen flex flex-col items-center justify-center text-white"
       style={{
         backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="bg-blue-900 bg-opacity-70 p-8 rounded-lg shadow-lg w-11/12 md:w-3/4 lg:w-1/2">
@@ -29,7 +31,7 @@ const Volunteer = () => {
         <div className="flex justify-center">
           <a
             href="mailto:volunteer@oceanguardians.org"
-            className="bg-seaGreen text-sandYellow px-6 py-3 rounded-full text-lg font-semibold hover:bg-seaGreen/80 transition duration-300"
+            className="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105"
           >
             Contact Us to Volunteer
           </a>

@@ -17,6 +17,7 @@ const Navbar = () => {
   return (
     <div className="nav-wrapper flex justify-between h-24 items-center  absolute z-10 w-full mx-auto my-auto ">
       <nav className="nav-bar  w-full ">
+
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
@@ -139,16 +140,20 @@ const Navbar = () => {
 
               <li>
                 <Link
-                  to="/donate"
-                  className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+
+                  to="/support"
+
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
                   Support Us
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/support"
-                  className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+
+                  to="/feedback"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+
                 >
                   Feedback
                 </Link>

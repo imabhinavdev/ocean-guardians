@@ -1,11 +1,16 @@
+import { authMiddleware } from "easy-jwt-auth";
 import { Login, SignUp } from "../controllers/auth.controllers.js";
 import { Router } from "express";
-import { signout } from "easy-jwt-auth";
 
 const router = Router();
 
+
 router.post("/login", Login);
 router.post("/signup", SignUp);
-router.post("/logout", signout)
+router.post("/logout", (req, res) => {
+    res.clearCookie("token");
+    res.status(200).json({ message: "Logged out successfully" });
+});
+
 
 export default router;

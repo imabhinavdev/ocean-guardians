@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { addJWTMethodsToSchema, authMiddleware, signout, refreshToken } from 'easy-jwt-auth';
+import { addJWTMethodsToSchema } from 'easy-jwt-auth';
 
 
 const OrganizationSchema = new Schema({
@@ -31,6 +31,7 @@ const OrganizationSchema = new Schema({
     password: {
         type: String,
         required: true,
+
     },
 
 

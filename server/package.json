@@ -16,9 +16,10 @@
   "dependencies": {
     "@uiw/react-markdown-editor": "^6.1.2",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "easy-jwt-auth": "^1.0.6",
+    "easy-jwt-auth": "^1.0.8",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",

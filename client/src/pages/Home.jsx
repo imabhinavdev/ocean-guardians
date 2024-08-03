@@ -1,5 +1,5 @@
 import React from 'react';
-import ocean from "../assets/ocean.jpg";
+import Ocean from "../assets/Ocean.jpg";
 import Marquee from '../components/gasp/marquee/index'
 import ScrollReveal from '../components/gasp/ScrollReveal/index';
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <main>
         <img
-          src={ocean}
+          src={Ocean}
           alt="oceanimg"
           className="w-full max-h-screen relative"
         />
